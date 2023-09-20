@@ -2,20 +2,20 @@ from scapy.all import *
 
 def main():
     while True:
-        print_menu()
+        printMenu()
         option = input('Choose a menu option: ')
         if option == '1':
             print("Listening to all traffic to 127.0.0.1 for 1 minute ...")
-            sniff(filter="host 127.0.0.1", prn=print_pkt, timeout=60)
+            sniff(filter="host 127.0.0.1", prn=printPacket, timeout=60)
         elif option == '2':
             print("End")
             break
         else:
             print(f"\nInvalid entry\n")
 
-def print_pkt(packet):
+def printPacket(packet):
     """ 
-    Print Packet fields
+    Print the Packet fields
     - Source IP
     - Destination IP
     - Protocol number
@@ -31,12 +31,9 @@ def print_pkt(packet):
     if Raw in packet:
         print(f"Raw payload: {packet[Raw].load}")
 
-def print_menu():
-    """Prints the menu of options"""
-    print("*******************Main Menu*******************")
+def printMenu():
     print('1. Listen to all traffic to 127.0.0.1 for 1 minute')
     print('2. Quit')
-    print('***********************************************\n')
 
 if __name__ == "__main__":
     main()
