@@ -29,4 +29,8 @@ I might make other versions to get it nicer looking in the future.
 This is another version of the interpreter except it is command line only, that is all.
 
 ## BrainF**k Interpreter
-This is coming up next, and will also be in C.
+A semi-working interpreter for the language Brainf*ck created in C++.
+This interpreter should work with most one line inputs, and the only trouble comes when the user wants to use more than one line.
+This could be fixed pretty easily in future implementations.
+Also, recursion could be used in this program rather than a loop, stack and map, though I didn't feel like doing it.
+I also found an input that could run the deadfish interpreter in this and it worked. Pretty cool.
