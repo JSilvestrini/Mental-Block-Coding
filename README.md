@@ -18,3 +18,12 @@ This is a very simple (and ugly) webapp that allows the user to add a task and r
 This could be made nicer with CSS, but that can come later
 Also, storage of the tasks could be done too, which could be nice
 Overall, there is a lot that can be done with this
+
+## Deadfish Interpreter
+This is a short chunk of code I wrote in C.
+It takes a file in the command line and will read it assuming that it is written in the 'Deadfish' language.
+This was pretty fun since I haven't worked with C in about a year, so it was a nice refresher for file io.
+I might make other versions to get it nicer looking in the future.
+
+## BrainF**k Interpreter
+This is coming up next, and will also be in C.
