@@ -25,5 +25,8 @@ It takes a file in the command line and will read it assuming that it is written
 This was pretty fun since I haven't worked with C in about a year, so it was a nice refresher for file io.
 I might make other versions to get it nicer looking in the future.
 
+## DeadFish.c
+This is another version of the interpreter except it is command line only, that is all.
+
 ## BrainF**k Interpreter
 This is coming up next, and will also be in C.
